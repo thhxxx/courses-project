@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  color: #7A7A7A;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1116px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 0 22px;
+  height: 40px;
+  border-radius: 5px;
+  background: $blue;
+  transition: all .25s ease;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $darkBlue;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  .menu {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+
+      li {
+        list-style: none;
+        position: relative;
+        padding: 24px 0;
+        transition: all .25s ease;
+
+        &:hover {
+          color: $blue;
+
+          ul {
+            top: 100%;
+            visibility: inherit;
+            opacity: 1;
+          }
+        }
+
+        ul {
+          box-shadow: 0 0.75rem 1rem rgb(189 197 209 / 30%);
+          background: #fff;
+          border-top: 3px solid $blue;
+          position: absolute;
+          z-index: 1;
+          border-radius: 0 0 5px 5px;
+          padding: 15px;
+          width: 250px;
+          flex-direction: column;
+          top: 200%;
+          visibility: hidden;
+          transition: all .25s ease;
+          opacity: 0;
+
+          li {
+            color: #7A7A7A;
+            padding: 12px 10px;
+            border-radius: 5px;
+
+            &:hover {
+              background: #efefef;
+            }
+
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.programs {
+  position: relative;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  &::before {
+    content: "";
+    background: url(https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/shape-5.svg) no-repeat left top;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -8%;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    background: #F7FAFF;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    right: calc(0px - ((100vw - 100%) / 2));
+  }
+
+  .swiper-button-prev {
+    background: rgb(255 255 255 / 80%);
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+    top: 60% !important;
+
+    &:after {
+      font-size: 18px !important;
+    }
+  }
+
+  .swiper-button-next {
+    background: rgb(255 255 255 / 80%);
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+    top: 60% !important;
+
+    &:after {
+      font-size: 18px !important;
+    }
+  }
+}
+
+.customer {
+  &:before {
+    content: "";
+    background: url(https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/dots.svg);
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+  }
+
+  &:after {
+    content: "";
+    background: url(https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/dots.svg);
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+  }
+}
