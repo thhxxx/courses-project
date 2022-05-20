@@ -220,7 +220,7 @@ const Home = () => {
       {/*form-registration*/}
 
       {/*find-learning*/}
-      <div className="mt-[100px] text-center bg-[url('https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/shape-6.svg')] bg-cover bg-center	bg-top">
+      <div className="mt-[100px] text-center bg-[url('https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/shape-6.svg')] bg-cover bg-center bg-top">
         <h3 className="font-bold text-2xl">Find the right learning path for you</h3>
         <p className="my-2.5 text-base">Answer a few questions and match your goals to our programs.</p>
         <button className="button mt-8">Explore by category</button>
