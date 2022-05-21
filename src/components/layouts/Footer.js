@@ -55,7 +55,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-[1/5]">
-              <span className="font-bold">© Front. 2021 Htmlstream. All rights reserved.</span>
+              © Front. 2021 Htmlstream. All rights reserved.
               <br/><br/>
               When you visit or interact with our sites, services or tools, we or our authorised service providers may
               use cookies for storing information to help provide you with a better, faster and safer experience and for

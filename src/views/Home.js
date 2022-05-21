@@ -1,6 +1,7 @@
 import React from 'react';
-import ProgramsCarousel from "../components/carousels/ProgramsCarousel";
+import ProgramsCarousel from "../components/elements/ProgramsCarousel";
 import TitlePrimary from "../components/elements/TitlePrimary";
+import Courses from "../components/elements/Courses";
 
 const logoPartner = [
   {
@@ -21,8 +22,6 @@ const logoPartner = [
 ]
 
 const Home = () => {
-
-  const stars = [...Array(5)]
 
   return (
     <div className="container">
@@ -65,60 +64,9 @@ const Home = () => {
         <TitlePrimary
           title="Featured courses"
           detail="Discover your perfect program in our courses."
-          cta="see all programs"
+          cta="see all courses"
         />
-        <div className="grid gap-[30px] mt-[50px] grid-cols-3">
-          {/*courses items*/}
-          <div className="hover:shadow-msd rounded-5">
-            <div
-              className="h-[218px] p-[15px] flex flex-col	rounded-t-5"
-              style={{
-                background: "url('https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/card-12.svg') no-repeat",
-              }}
-            >
-              <div>
-                <span
-                  className="bg-[#00C9A7] text-white inline-block text-xs px-2.5 py-[5px] rounded-full font-bold"
-                >Bestseller</span>
-              </div>
-              <div className="mt-auto text-lg">
-                {
-                  stars.map((_, index) => {
-                    return (
-                      <i className="mr-[5px] text-yellow-400 fa-solid fa-star" key={index}/>
-                    )
-                  })
-                }
-
-                <span className="text-white">725 reviews</span>
-              </div>
-            </div>
-            <div className="py-5 px-[15px] border rounded-b-5">
-              <div className="text-xs">CODE</div>
-              <h1 className="text-base mt-2 mb-5 font-bold">
-                Complete Python Bootcamp: Go from zero to hero in Python
-              </h1>
-              <div className="flex items-center text-xs mb-10 gap-x-2">
-                <img
-                  className="w-10	h-10 rounded-[50%]"
-                  src="https://htmlstream.com/preview/front-v4.2/html/assets/img/160x160/img3.jpg"
-                  alt=""/>
-                <h3>Hugh Jackman</h3>
-                <div className="grow text-right">
-                  <i className="fa-solid fa-book"/> 42 lessons
-                </div>
-              </div>
-              <div className="flex items-center justify-between">
-                <div>
-                  <span className="text-xs line-through	">$114.99</span>
-                  <h6 className="text-blue text-base font-bold">$114.99</h6>
-                </div>
-                <button className="button">Preview</button>
-              </div>
-            </div>
-          </div>
-          {/*courses items*/}
-        </div>
+        <Courses/>
       </div>
       {/*courses*/}
 
@@ -220,7 +168,8 @@ const Home = () => {
       {/*form-registration*/}
 
       {/*find-learning*/}
-      <div className="mt-[100px] text-center bg-[url('https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/shape-6.svg')] bg-cover bg-center bg-top">
+      <div
+        className="mt-[100px] text-center bg-[url('https://htmlstream.com/preview/front-v4.2/html/assets/svg/components/shape-6.svg')] bg-cover bg-center bg-top">
         <h3 className="font-bold text-2xl">Find the right learning path for you</h3>
         <p className="my-2.5 text-base">Answer a few questions and match your goals to our programs.</p>
         <button className="button mt-8">Explore by category</button>

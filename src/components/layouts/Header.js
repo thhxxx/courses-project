@@ -14,11 +14,11 @@ const Header = () => {
         <Menu/>
         <Search/>
         <Cart/>
-        <button className="button">
-          <Link to="/login">
+        <Link to="/login">
+          <button className="button">
             get started
-          </Link>
-        </button>
+          </button>
+        </Link>
       </header>
     </div>
   );

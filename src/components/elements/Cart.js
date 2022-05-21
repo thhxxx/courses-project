@@ -2,13 +2,13 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 const Cart = () => {
-    return (
-        <button className="button">
-            <Link to="/cart">
-                <i className="fa-solid fa-cart-shopping"/>
-            </Link>
-        </button>
-    );
+  return (
+    <Link to="/cart">
+      <button className="button">
+        <i className="fa-solid fa-cart-shopping"/>
+      </button>
+    </Link>
+  );
 };
 
 export default Cart;
