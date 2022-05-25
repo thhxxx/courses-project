@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Search = () => {
+const SearchElement = () => {
   return (
     <div className="relative grow">
       <input
@@ -17,4 +17,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchElement;

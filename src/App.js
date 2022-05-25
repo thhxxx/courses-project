@@ -1,22 +1,24 @@
 import {Route, Routes} from "react-router-dom";
 import DefaultLayout from "./layouts/DefaultLayout";
-import Home from "./views/Home";
-import ListCourses from "./views/ListCourses";
-import ListCart from "./views/ListCart";
-import Login from "./views/Login";
-import NoMatch from "./layouts/NoMatch";
+import HomeView from "./views/HomeView";
+import ListCoursesView from "./views/ListCoursesView";
+import ListCartView from "./views/ListCartView";
+import LoginView from "./views/LoginView";
+import NoMatchLayout from "./layouts/NoMatchLayout";
+import CourseDetailView from "./views/CourseDetailView";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<DefaultLayout/>}>
-          <Route index element={<Home/>}/>
-          <Route path="courses" element={<ListCourses/>}/>
-          <Route path="cart" element={<ListCart/>}/>
+          <Route index element={<HomeView/>}/>
+          <Route path="courses" element={<ListCoursesView/>}/>
+          <Route path="cart" element={<ListCartView/>}/>
+          <Route path="course-detail" element={<CourseDetailView/>}/>
+          <Route path="*" element={<NoMatchLayout/>}/>
         </Route>
-        <Route path="login" element={<Login/>}/>
-        <Route path="*" element={<NoMatch/>}/>
+        <Route path="login" element={<LoginView/>}/>
       </Routes>
     </div>
   );

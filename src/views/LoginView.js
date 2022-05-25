@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const Login = () => {
+const LoginView = () => {
   return (
     <div className="grid grid-cols-3">
       <div
@@ -65,4 +65,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginView;

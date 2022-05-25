@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TitlePrimary = ({title, detail, cta}) => {
+const TitlePrimaryElement = ({title, detail, cta}) => {
   return (
     <div className="flex justify-between mt-10">
       <div className="max-w-[50%]">
@@ -16,4 +16,4 @@ const TitlePrimary = ({title, detail, cta}) => {
   );
 };
 
-export default TitlePrimary;
+export default TitlePrimaryElement;

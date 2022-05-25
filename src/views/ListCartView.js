@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListCart = () => {
+const ListCartView = () => {
     return (
         <div>
             cart
@@ -8,4 +8,4 @@ const ListCart = () => {
     );
 };
 
-export default ListCart;
+export default ListCartView;

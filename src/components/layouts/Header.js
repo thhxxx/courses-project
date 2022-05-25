@@ -1,7 +1,7 @@
 import React from 'react';
-import Menu from "../elements/Menu";
-import Search from "../elements/Search";
-import Cart from "../elements/Cart";
+import MenuElement from "../elements/MenuElement";
+import SearchElement from "../elements/SearchElement";
+import CartElement from "../elements/CartElement";
 import {Link} from "react-router-dom";
 
 const Header = () => {
@@ -11,9 +11,9 @@ const Header = () => {
         <div className="w-[115px]">
           <img src="https://htmlstream.com/preview/front-v4.2/html/assets/svg/logos/logo.svg" alt=""/>
         </div>
-        <Menu/>
-        <Search/>
-        <Cart/>
+        <MenuElement/>
+        <SearchElement/>
+        <CartElement/>
         <Link to="/login">
           <button className="button">
             get started

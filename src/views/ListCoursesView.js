@@ -1,8 +1,8 @@
 import React from 'react';
-import Courses from "../components/elements/Courses";
-import FilterCourses from "../components/elements/FilterCourses";
+import CoursesElement from "../components/elements/CoursesElement";
+import FilterCoursesElement from "../components/elements/FilterCoursesElement";
 
-const ListCourses = () => {
+const ListCoursesView = () => {
   return (
     <div className="container">
       <div
@@ -13,10 +13,10 @@ const ListCourses = () => {
         <h1 className="font-bold text-4xl">Course catalog</h1>
         <p className="mt-5 text-xl">Front Course includes over 20,000 courses.</p>
       </div>
-      <FilterCourses/>
-      <Courses/>
+      <FilterCoursesElement/>
+      <CoursesElement/>
     </div>
   );
 };
 
-export default ListCourses;
+export default ListCoursesView;

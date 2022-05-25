@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Courses = () => {
+const CoursesElement = () => {
   const stars = [...Array(5)]
   return (
     <div className="grid gap-[30px] mt-[50px] grid-cols-3">
@@ -58,4 +58,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default CoursesElement;

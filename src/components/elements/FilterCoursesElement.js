@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterCourses = () => {
+const FilterCoursesElement = () => {
   return (
     <div className="mt-[50px]">
       <select className="border rounded-5 h-10 px-3">
@@ -13,4 +13,4 @@ const FilterCourses = () => {
   );
 };
 
-export default FilterCourses;
+export default FilterCoursesElement;

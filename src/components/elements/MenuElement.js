@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const Menu = () => {
+const MenuElement = () => {
     return (
         <div className="menu">
             <ul>
@@ -24,4 +24,4 @@ const Menu = () => {
     );
 };
 
-export default Menu;
+export default MenuElement;

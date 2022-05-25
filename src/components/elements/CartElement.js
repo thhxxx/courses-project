@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const Cart = () => {
+const CartElement = () => {
   return (
     <Link to="/cart">
       <button className="button">
@@ -11,4 +11,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default CartElement;

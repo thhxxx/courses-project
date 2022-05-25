@@ -1,7 +1,7 @@
 import React from 'react';
-import ProgramsCarousel from "../components/elements/ProgramsCarousel";
-import TitlePrimary from "../components/elements/TitlePrimary";
-import Courses from "../components/elements/Courses";
+import ProgramsCarouselElement from "../components/elements/ProgramsCarouselElement";
+import TitlePrimaryElement from "../components/elements/TitlePrimaryElement";
+import CoursesElement from "../components/elements/CoursesElement";
 
 const logoPartner = [
   {
@@ -21,7 +21,7 @@ const logoPartner = [
   }
 ]
 
-const Home = () => {
+const HomeView = () => {
 
   return (
     <div className="container">
@@ -51,22 +51,22 @@ const Home = () => {
 
       {/*programs*/}
       <div className="programs">
-        <TitlePrimary
+        <TitlePrimaryElement
           title="Check out our newest and most popular programs"
           cta="see all programs"
         />
-        <ProgramsCarousel/>
+        <ProgramsCarouselElement/>
       </div>
       {/*programs*/}
 
       {/*courses*/}
       <div className="mt-[60px] overflow-auto">
-        <TitlePrimary
+        <TitlePrimaryElement
           title="Featured courses"
           detail="Discover your perfect program in our courses."
           cta="see all courses"
         />
-        <Courses/>
+        <CoursesElement/>
       </div>
       {/*courses*/}
 
@@ -180,4 +180,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeView;
