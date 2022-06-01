@@ -1,4 +1,5 @@
 import React from 'react';
+import CourseContentAccordion from "../components/elements/accordion/CourseContentAccordion";
 
 const CourseDetailView = () => {
   const stars = [...Array(5)]
@@ -77,6 +78,7 @@ const CourseDetailView = () => {
           </li>
         </ul>
         <h2 className="mt-10 text-black font-bold mb-4 text-lg">Course content:</h2>
+        <CourseContentAccordion/>
       </div>
     </div>
   );

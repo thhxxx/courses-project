@@ -44,7 +44,7 @@ const programs = [
   },
 ]
 
-const ProgramsCarouselElement = () => {
+const ProgramsCarousel = () => {
   return (
     <div className="mt-[30px] mr-[calc(0px-((100vw-100%)/2)+15px)]">
       <Swiper
@@ -83,4 +83,4 @@ const ProgramsCarouselElement = () => {
   );
 };
 
-export default ProgramsCarouselElement;
+export default ProgramsCarousel;

@@ -1,6 +1,7 @@
 import React from 'react';
 import CoursesElement from "../components/elements/CoursesElement";
-import FilterCoursesElement from "../components/elements/FilterCoursesElement";
+import FilterCourses from "../components/elements/course-detail/FilterCourses";
+import SortCourses from "../components/elements/course-detail/SortCourses";
 
 const ListCoursesView = () => {
   return (
@@ -13,7 +14,10 @@ const ListCoursesView = () => {
         <h1 className="font-bold text-4xl">Course catalog</h1>
         <p className="mt-5 text-xl">Front Course includes over 20,000 courses.</p>
       </div>
-      <FilterCoursesElement/>
+      <div className="mt-[50px]">
+        <FilterCourses/>
+        <SortCourses/>
+      </div>
       <CoursesElement/>
     </div>
   );

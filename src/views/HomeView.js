@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgramsCarouselElement from "../components/elements/ProgramsCarouselElement";
+import ProgramsCarousel from "../components/elements/carousel/ProgramsCarousel";
 import TitlePrimaryElement from "../components/elements/TitlePrimaryElement";
 import CoursesElement from "../components/elements/CoursesElement";
 
@@ -54,8 +54,9 @@ const HomeView = () => {
         <TitlePrimaryElement
           title="Check out our newest and most popular programs"
           cta="see all programs"
+          url="/"
         />
-        <ProgramsCarouselElement/>
+        <ProgramsCarousel/>
       </div>
       {/*programs*/}
 
@@ -65,6 +66,7 @@ const HomeView = () => {
           title="Featured courses"
           detail="Discover your perfect program in our courses."
           cta="see all courses"
+          url="/courses"
         />
         <CoursesElement/>
       </div>
