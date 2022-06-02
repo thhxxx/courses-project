@@ -5,7 +5,7 @@ const CartElement = () => {
   return (
     <Link to="/cart">
       <button className="button">
-        <i className="fa-solid fa-cart-shopping"/>
+        <i className="fa-solid fa-cart-shopping"/> 2
       </button>
     </Link>
   );

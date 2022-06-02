@@ -55,8 +55,12 @@ const CourseContentAccordion = () => {
       {
         data.map((value, index) => {
           return <div key={index} className="py-4 cursor-pointer">
-            <h1 className="rounded-5 p-4 bg-[#7A7A7A]"
-                style={clicked === index && "color: #377dff"}
+            <h1 className={clicked === index ? "text-blue" : ""}
+                style={{
+                  background: "#efefef",
+                  padding: "16px",
+                  borderRadius: "5px"
+                }}
                 onClick={() => toggleContent(index)}>
               <i className="fa-solid fa-address-book"/> {value.title}
             </h1>
